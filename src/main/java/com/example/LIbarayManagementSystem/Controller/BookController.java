@@ -30,7 +30,7 @@ public class BookController
         }
         catch (Exception e)
         {
-            log.error("Book Not add {}"+e.getMessage());
+            log.error("Book Not added {}"+e.getMessage());
             return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
         }
     }
